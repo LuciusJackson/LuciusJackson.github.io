@@ -1,5 +1,19 @@
-body{color: #404040; }
-#pieh1 {color: #a4a400; background-color: #f0f0f0; text-align: center;}
+/* PIE>HTML */
+#piebody{color: #404040; 
+    background-image: url(https://www.rose-hulman.edu/class/csse/csse290-WebProgramming/images/silverware.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 45%;}
+#pieh1 {color: #a4a400; background-color: #f0f0f0; text-align: center; font-family: serif;}
 #pie-p {font-family: Georgia, 'Times New Roman', Times, serif;}
 #pieh2 {color: #a4a400; background-color: #f0f0f0; text-align: left;}
 #pieblock {background-color: #FFFFA8 ;}
+#pielink {color: #a4a400;}
+#piep2 {font-family: monospace; }
+#pieul {list-style-image: url(https://www.rose-hulman.edu/class/csse/csse290-WebProgramming/images/pie_bullet.png);}
+/* PIE>HTML END */
+
+/* INDEX>HTML START */
+#indexh1 {color: rgb(248, 123, 217); text-align: center; background-color: #a8f5ffa4;} 
+
+/* INDEX>HTML END */
