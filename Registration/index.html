@@ -6,6 +6,8 @@
     <title>Registration</title>
     <style>
         fieldset {background: rgb(146, 145, 145);}
+        #smalltext {font-size: 66%; display: inline-flex;}
+        #smalltext2 {font-size: 66%; color: #edf0f5;}
     </style>
 </head>
 <body>
@@ -13,11 +15,29 @@
         <fieldset>
             <label id="header">Sign Up</label> <br>
             <label id="text">It's free and always will be.</label> <br>
-            <input type="text" name="name" id="name" placeholder="First Name"> 
-            <input type="text" name="name" id="name" required> <br>
+            <input type="text" name="first_name" size="15" maxlength="100" placeholder="First Name"> 
+            <input type="text" name="last_name" size="15" maxlength="100" placeholder="Last Name"> <br>
             <input type="text" name="email" id="email" required placeholder="Your Email"> <br> 
             <input type="text" name="email" id="email" required placeholder="Re-enter Email"> <br>
             <input type="text" name="password" id="password" required placeholder="New Password"> <br>
+            <label id="text">Birthday</label> <br>
+            <select>
+                <option disabled selected value>Month</option>
+                <option></option>
+            </select>
+            <select>
+                <option disabled selected value>Day</option>
+            </select>
+            <select>
+                <option disabled selected value>Year</option>
+            </select> <a href="#" id="smalltext">Why do I need to provide my birthday?</a> <br>
+            <input type="radio" name="female" id="female" value="female">
+                <label for="female" class="female">Female</label> 
+            <input type="radio" name="male" id="male" value="no">
+                <label for="male" class="male">Male</label>  <br>
+            <p id="smalltext2">By Clicking Sign Up, you agree to our <a href="#">Terms</a> and that you have
+                read our <a href="#">Data Use Policy.</a> including our <a href="#">Cookie Use</a>.
+            </p>
             
 
 
