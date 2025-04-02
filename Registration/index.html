@@ -5,15 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
     <style>
-        fieldset {background: rgb(146, 145, 145); width: 100%; margin: 0 auto; : center;}
-        #smalltext {font-size: 66%; display: inline-flex;}
+        fieldset {background: rgb(146, 145, 145); width: 100%; margin: 0 auto; align-content: left};
+        #smalltext {font-size: 66%; }
         #smalltext2 {font-size: 66%; color: #edf0f5; text-align: left;}
-        #header {margin-bottom: -9%; text-align: left; margin-top: 0%;}
+        #header {margin-bottom: -12%; text-align: left; margin-top: 0%;}
         #text {text-align: left;}
         button {background-color: #659d50; font-size: 17px; padding-left: 32px; padding-right: 32px;
         padding-top: 5px; padding-bottom: 5px; border-radius: 5px; color: white; font-weight: bold;
         display: inline-flex;}
         form {max-width: 300px;}
+        #email {border-radius: 5px; width: 100%;}
+        #password {border-radius: 5px; width: 100%;}
+        #name1 {border-radius: 5px; width: 48%; margin-left: -3%;}
+        #name2 {border-radius: 5px; width: 48%; margin-right: -5.5%;}
     </style>
 </head>
 <body>
@@ -21,13 +25,13 @@
         <fieldset>
             <h2 id="header">Sign Up</h2> <br>
             <p id="text">It's free and always will be.</p> <br>
-            <input type="text" name="first_name" size="15" maxlength="100" placeholder="First Name"> 
-            <input type="text" name="last_name" size="15" maxlength="100" placeholder="Last Name"> <br>
+            <input type="text" name="first_name" size="15" maxlength="100" placeholder="First Name" id="name1"> 
+            <input type="text" name="last_name" size="15" maxlength="100" placeholder="Last Name" id="name2"> <br>
             <input type="text" name="email" id="email" required placeholder="Your Email"> <br> 
             <input type="text" name="email" id="email" required placeholder="Re-enter Email"> <br>
             <input type="text" name="password" id="password" required placeholder="New Password"> <br>
             <label id="text">Birthday</label> <br>
-            <select>
+            <select id="select1">
                 <option disabled selected value>Month</option>
                 <option>January</option>
                 <option>February</option>
@@ -42,7 +46,7 @@
                 <option>November</option>
                 <option>December</option>
             </select>
-            <select>
+            <select id="select">
                 <option disabled selected value>Day</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -76,7 +80,7 @@
                 <option value="30">30</option>
                 <option value="31">31</option>
             </select>
-            <select>
+            <select id="select">
                 <option disabled selected value>Year</option>
                 <option value="2018">2018</option>
                 <option value="2017">2017</option>
