@@ -4,24 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
-    <style>
-        fieldset {background: rgb(146, 145, 145); width: 100%; margin: 0 auto; align-content: left};
-        #smalltext {font-size: 66%; }
-        #smalltext2 {font-size: 66%; color: #edf0f5; text-align: left;}
-        #header {margin-bottom: -12%; text-align: left; margin-top: 0%;}
-        #text {text-align: left;}
-        button {background-color: #659d50; font-size: 17px; padding-left: 32px; padding-right: 32px;
-        padding-top: 5px; padding-bottom: 5px; border-radius: 5px; color: white; font-weight: bold;
-        display: inline-flex;}
-        form {max-width: 300px;}
-        #email {border-radius: 5px; width: 100%;}
-        #password {border-radius: 5px; width: 100%;}
-        #name1 {border-radius: 5px; width: 48%; margin-left: -3%;}
-        #name2 {border-radius: 5px; width: 48%; margin-right: -5.5%;}
-    </style>
+    <link rel="stylesheet" href="CSS/css.css">
 </head>
 <body>
-    <form action="#" method="post" id="registration" style="text-align: center;" onsubmit="alert('Not implemented yet')">
+    <form action="#" method="regiistration" id="registration" style="text-align: center;" onsubmit="alert('Not implemented yet')">
         <fieldset>
             <h2 id="header">Sign Up</h2> <br>
             <p id="text">It's free and always will be.</p> <br>
@@ -30,21 +16,21 @@
             <input type="text" name="email" id="email" required placeholder="Your Email"> <br> 
             <input type="text" name="email" id="email" required placeholder="Re-enter Email"> <br>
             <input type="text" name="password" id="password" required placeholder="New Password"> <br>
-            <label id="text">Birthday</label> <br>
+            <label id="text1">Birthday</label> <br>
             <select id="select1">
                 <option disabled selected value>Month</option>
-                <option>January</option>
-                <option>February</option>
-                <option>March</option>
-                <option>April</option>
+                <option>Jan</option>
+                <option>Feb</option>
+                <option>Mar</option>
+                <option>Apr</option>
                 <option>May</option>
-                <option>June</option>
-                <option>July</option>
-                <option>August</option>
-                <option>September</option>
-                <option>October</option>
-                <option>November</option>
-                <option>December</option>
+                <option>Jun</option>
+                <option>Jul</option>
+                <option>Aug</option>
+                <option>Sep</option>
+                <option>Oct</option>
+                <option>Nov</option>
+                <option>Dec</option>
             </select>
             <select id="select">
                 <option disabled selected value>Day</option>
@@ -196,17 +182,18 @@
                 <option value="1907">1907</option>
                 <option value="1906">1906</option>
                 <option value="1905">1905</option>
+            </select> 
 
-            </select> <a href="#" id="smalltext">Why do I need to provide my birthday?</a> <br>
+            <a href="#" id="smalltext">Why do I need to provide my birthday?</a> <br>
             <input id="female" type="radio" name="female" id="female" value="female">
                 <label for="female" class="female">Female</label> 
             <input id="male" type="radio" name="male" id="male" value="no">
                 <label for="male" class="male">Male</label>  <br>
+
             <p id="smalltext2">By Clicking Sign Up, you agree to our <a href="#">Terms</a> and that you <br> have
                 read our <a href="#">Data Use Policy.</a> including our <a href="#">Cookie Use</a>.
             </p>
-
-            <button>Sign Up</button>
+            <button id="button">Sign Up</button>
             
 
 
