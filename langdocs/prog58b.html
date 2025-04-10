@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prog58b</title>
+</head>
+<body>
+
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+    <input type="number" id="num3">
+
+
+    <button onclick="calculate()">Calculate</button>
+    <p id="out"></p>
+
+    <script>
+        function calculate() {
+            let A = Number(document.getElementById("num1").value);
+            let B = Number(document.getElementById("num2").value);
+            let C = Number(document.getElementById("num3").value);
+
+            let proot = (-B + Math.sqrt(B**2 - 4 * A * C)) / 2 * A;
+            let nroot = (-B - Math.sqrt(B**2 - 4 * A * C)) / 2 * A;
+
+            let out = document.getElementById("out");
+            out.innerText = proot + "          " + nroot;
+        }
+    </script>
+</body>
+</html>
