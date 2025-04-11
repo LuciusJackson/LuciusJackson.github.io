@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prog93a</title>
+</head>
+<body>
+    <label>Enter KWH Here:</label>
+    <input type="number" id="input">
+    <!-- COST = 4.75  TAX = 3%  surcharge = 10% late = 4% -->
+    <button onclick="calculate()">Calculate</button>
+    <p id="out"></p>
+    <script>
+        function calculate() {
+            let kwh = Number(document.getElementById("input").value);
+            let total = kwh*0.0475
+            let tax = total*0.03
+            let sur = total*0.1
+            let late = total*0.04
+            let sum = total+tax+sur
+            let fee = total+tax+late+sur
+            
+            let out = document.getElementById("out");
+            out.innerText = "KWH used: $" + kwh + " Total: $" + total + " Tax: $" + tax + " Surcharge: $" + sur + " Pay this amount: $" + sum + " Fee If Late: $" + fee;
+        }
+
+
+    </script>
+</body>
+</html>
