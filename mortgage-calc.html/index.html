@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1 id="header1">Mortgage Calculator</h1>
+    <fieldset id="fieldset1">
+        <div id="input/labels">
+            <label>Principal: </label><input type="number" maxlength="10"> <br/>
+            <label>Interest Rate as % (e.g 7.9): </label><input type="number" maxlength="3"> <br/>
+            <label>Number of Years: </label><input type="number" maxlength="3"> <br/>
+            <label>Monthly Payment: </label><input type="number" maxlength="10"> <br/>
+        </div>
+
+        <div id="important-buttons">
+            <button id="calculate">Calculate</button>
+            <button id="reset">Reset</button> <br/>
+        </div>
+
+        <div id="div-calculations">
+            <fieldset id="fieldset2">
+            <p id="output"></p>
+            </fieldset>
+        </div>
+
+
+        
+    </fieldset>
+
+
+
     
 </body>
 </html>

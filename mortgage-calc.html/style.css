@@ -1,1 +1,25 @@
+#fieldset1 {text-align: center; background: #8800ff;
+background: #8800ff;
+background: linear-gradient(166deg, rgba(136, 0, 255, 0.72) 0%, rgba(87, 126, 199, 0.64) 50%, rgba(237, 83, 83, 0.75) 100%);
+}
+
+input {width: 70px; border-radius: 3px; border-width: 1px; }
+
+#fieldset2 {background-color: aliceblue; width: 200px; margin-left: 42.5%;}
+
+#header1 {text-align: center;}
+
+#calculate {border-width: 1px; border-radius: 5px;}
+
+#reset {border-width: 1px; border-radius: 5px;}
+
+
+
+
+
+
+
+
+
+
 
