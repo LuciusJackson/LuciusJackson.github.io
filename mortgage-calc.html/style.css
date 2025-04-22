@@ -1,4 +1,6 @@
-#fieldset1 {text-align: center; background: #8800ff;
+form {margin-left: 550px;}
+#fieldset1 { width: 33%;
+text-align: #8800ff;
 background: #8800ff;
 background: linear-gradient(166deg, rgba(136, 0, 255, 0.72) 0%, rgba(87, 126, 199, 0.64) 50%, rgba(237, 83, 83, 0.75) 100%);
 }
@@ -9,12 +11,13 @@ input {width: 70px; border-radius: 3px; border-width: 1px; }
 
 #header1 {text-align: center;}
 
-#calculate {border-width: 1px; border-radius: 5px;}
+#calculate {border-width: 1px; border-radius: 5px; margin-left: 25%; margin-top: 1%;}
 
 #reset {border-width: 1px; border-radius: 5px;}
 
-
-
+#princ {margin-left: 40%; margin-bottom: 1%;}
+#num {margin-left: 22.3%; margin-top: 1%;}
+#month {margin-left: 20.1%; margin-top: 1%;}
 
 
 
