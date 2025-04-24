@@ -21,6 +21,6 @@ function doMath(){
     out += "pow: " + pow + "<br>";
     out += "sqrt(n1): " + sq1.toFixed(4) + "<br>";
     out += "sqrt(n2): " + sq2.toFixed(4) + "<br>";
-    document.getElementById("output").innerHTML = out;
+    document.getElementById('output').innerHTML = out;
 
 }
