@@ -2,22 +2,24 @@
 
 function calculate() {
     let P = Number(document.getElementById('princ').value);
-    let R = Number(document.getElementById('inter').value) / 10;
+    let R = Number(document.getElementById('inter').value) / 100;
     let N = 12;
     let T = Number(document.getElementById('num').value);
     let M = Number(document.getElementById('month').value);
 
 // Variable //
     
-    let part1 = P(1+(R/N))^N+T;
-    let part2 = M[(1+(R/N))^N+T - 1];
-    let part3 = part2 / R/N;
-    let part4 = part1 - part3;
-    let B = part4;
+    let R_N = R / N;
+    
+    let function1 = P*(1 + R_N)**(N*T);
+    let function2 = M*((1 + R_N)**(N*T) - 1);
+    let function3 = function2 / (R_N);
 
-
+    let equasion = function3 - function1;
+    
+    let B = equasion;
 // Final Product //
     let out = "";
     out += B;   
-    document.getElementById('output').innerHTML = out;
+    document.getElementById('output').innerHTML = "$" + out;
 }
