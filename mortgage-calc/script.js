@@ -11,14 +11,20 @@ function calculate() {
     
     let R_N = R / N;
     
+// Steps //
+
     let function1 = P*(1 + R_N)**(N*T);
     let function2 = M*((1 + R_N)**(N*T) - 1);
     let function3 = function2 / (R_N);
 
+// Final //
+
     let equasion = function3 - function1;
     
     let B = equasion;
+
 // Final Product //
+
     let out = "";
     out += B;   
     document.getElementById('output').innerHTML = "$" + out;
