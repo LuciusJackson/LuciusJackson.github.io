@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{ transition: 0.2s; }
+    </style>
+</head>
+<body id="bdy">
+    
+    <h1 id="clock">00:00:00</h1>
+    <p id="hex">#000000</p>
+
+
+    <script>
+        function updateTime() {
+            let date = new Date();
+            let s = ("0"+date.getSeconds()).slice(-2);
+            let m = ("0"+date.getMinutes()).slice(-2);
+            let h = ("0"+date.getHours()).slice(-2);
+
+            let hex = "#" + h + m + s;
+            let hms = h + ":" + m + ":" + s;
+            document.getElementById("clock").innerHTML = hms;
+            document.getElementById("hex").innerHTML = hex;
+            document.getElementById("bdy").style.backgroundColor = hex;
+
+
+        }
+        setInterval(updateTime, 1000);
+    </script>
+</body>
+</html>
