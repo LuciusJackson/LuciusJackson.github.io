@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>test 1</li>
+        <li>test 2</li>
+        <li>test 3</li>
+    </ul>
+    <p id="wow">Some text</p>
+    <h1 class="test">Heading 1</h1>
+    <h1 class="test">Heading 2</h1>
+    <h1 class="test">Heading 3</h1>
+
+    <script>
+        //queire selector grabs first item that matches css selector
+        let h1 = document.querySelector(".test"); //or h1
+        h1.innerHTML = "updated heading";
+        
+        let p = document.querySelector("#wow"); //or P
+        p.textContent = "paragragh";
+
+        let allHtags = document.querySelectorAll(".test");
+        for (let i = 0; i < allHtags.length; i++) {allHtags[i].style.backgroundColor = "green";}
+
+        let allHtagsCl = document.getElementsByClassName("test")
+        for (let i = 0; i < allHtagsCl.length; i++) {allHtagsCl[i].style.color = "white";}
+        
+    </script>
+</body>
+</html>
