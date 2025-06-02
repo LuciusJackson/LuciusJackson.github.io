@@ -11,28 +11,25 @@
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js" integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="container" id="sidebar"><!--NAVBAR-->
         <div class="left-box">
-            <img id="home-blue" src="misc/Home.png">
-            <p id="home-text">Home</p>
+            <button id="button-home">
+                <img id="home-blue" src="misc/Home.png">
+                <p id="home-text">Home</p>
+            </button>
 
-            <img id="port-black" src="misc/Archive.png">
-            <p id="port-text">Portfolio</p>
+            <button id="port-button" onclick="goTo('projects.html')">
+                <img id="port-black" src="misc/Archive.png">
+                <p id="port-text">Portfolio</p>
+            </button>
 
-            <img id="about-black" src="misc/File text.png">
-            <p id="about-text">About</p>
-
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
+            <button id="about-button" onclick="goTo('index.html')">
+                <img id="about-black" src="misc/File text.png">
+                <p id="about-text">About</p>
+            </button>
 
         </div>
     </div>
@@ -51,12 +48,16 @@
             </ul>
     </div>
 
-    <div><!--Contact form-->
-        <h2>Contact</h2>
+    <div class="container" id="contact-box"><!--Contact form-->
+        <h2 id="contact">Contact</h2>\
+            <input type="text" placeholder="Email Address" id="email">
+            <input type="text" placeholder="Message" id="message">
+            <button id="send">Send Email</button>
+        
     </div>
 
-    <div><!--Information-->
-        
+    <div class="container"><!--Information-->
+        <p id="info"></p>
     </div>
 </body>
 </html>
