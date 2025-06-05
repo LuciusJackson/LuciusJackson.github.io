@@ -16,7 +16,7 @@
 
 
 /* side info */
-body {background-color: #222222; font-family: system}
+body {background-color: #222222;}
 
 #page-name {letter-spacing: -2px;} 
 
@@ -41,3 +41,7 @@ text-align: center;
 #home-text-blk {color: #000000; font-weight: bold;}
 #about-text-blue {color: rgb(0, 217, 255); font-weight: bold;}
 #port-text-blue {color: rgb(0, 217, 255); font-weight: bold;}
+
+#port-body {background-color: #222222;}
+#port-name {color: #ffffff; margin-left: 9%;}
+#table {border-color: #ffffff;}
